@@ -1,7 +1,8 @@
 Feature('Typescript Example');
 
-Scenario('test something', ({ I, pageObject }) => {
+Scenario('test something', ({ I, loginPage, homePage }) => {
   I.amOnPage('/')
   I.printMessage('Oops')
-  pageObject.testMethod('pageObject')
+  loginPage.testMethod('Login Page')
+  homePage.goToHome()
 });

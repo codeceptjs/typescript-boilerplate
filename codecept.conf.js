@@ -21,7 +21,8 @@ exports.config = {
   bootstrap: null,
   mocha: {},
   include: {
-    pageObject: './pageObject.ts'
+    loginPage: './loginPage.ts',
+    homePage: './homePage.ts'
   },
   name: 'typescript-boilerplate',
   plugins: {
