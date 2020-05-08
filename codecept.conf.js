@@ -20,6 +20,9 @@ exports.config = {
   },
   bootstrap: null,
   mocha: {},
+  include: {
+    pageObject: './pageObject.ts'
+  },
   name: 'typescript-boilerplate',
   plugins: {
     retryFailedStep: {

@@ -1,9 +1,9 @@
 /// <reference types='codeceptjs' />
+type pageObject = typeof import('./pageObject');
 type CustomHelper = import('./CustomHelper');
 
 declare namespace CodeceptJS {
-  interface SupportObject { I: CodeceptJS.I }
-  interface CallbackOrder { [0]: CodeceptJS.I }
+  interface SupportObject { I: CodeceptJS.I, pageObject: pageObject }
   interface Methods extends CodeceptJS.Puppeteer, CustomHelper {}
   interface I extends WithTranslation<Methods> {}
   namespace Translation {
