@@ -5,7 +5,8 @@
   "author": "Vorobeyko <sashavorobey95@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "run:tests": "codeceptjs run"
+    "run:tests": "codeceptjs run",
+    "def": "codeceptjs def"
   },
   "dependencies": {
     "codeceptjs": "^2.6.3",

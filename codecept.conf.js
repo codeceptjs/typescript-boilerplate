@@ -13,6 +13,9 @@ exports.config = {
       url: 'http://tinkoff.ru',
       show: false,
       windowSize: '1200x900'
+    },
+    CustomHelper: {
+      require: './CustomHelper.ts'
     }
   },
   bootstrap: null,
