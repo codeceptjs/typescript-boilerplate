@@ -1,0 +1,24 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "ES2018",
+    "lib": ["ES2018", "dom"],
+    "rootDir": "./",
+    "baseUrl": "./",
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "importHelpers": true,
+    "noImplicitAny": true
+  },
+}
