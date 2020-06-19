@@ -18,7 +18,7 @@ exports.config = {
       require: './CustomHelper.ts'
     }
   },
-  bootstrap: null,
+  bootstrap: require('./presettings.ts').bootstrap,
   mocha: {},
   include: {
     loginPage: './loginPage.ts',
