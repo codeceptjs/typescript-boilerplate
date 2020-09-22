@@ -5,7 +5,7 @@ This is a boilerplate project which includes CodeceptJS + Playwright setup using
 Clone this repository to start:
 
 ```
-git clone https://github.com/codeceptjs/typescript-boilerplate
+git clone https://github.com/codeceptjs/typescript-boilerplate .
 ```
 
 > Remove `.git` folder as you won't need it anymore
