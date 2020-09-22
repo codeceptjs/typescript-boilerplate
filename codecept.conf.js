@@ -1,16 +1,17 @@
 require('ts-node/register')
 const { setHeadlessWhen } = require('@codeceptjs/configure');
+const { bootstrap } = require('./presettings.ts');
 
 // turn on headless mode when running with HEADLESS=true environment variable
 // HEADLESS=true npx codecept run
 setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
-  tests: './*_test.ts',
+  tests: './tests/**_test.ts',
   output: './output',
   helpers: {
     Puppeteer: {
-      url: 'http://tinkoff.ru',
+      url: 'https://github.com',
       show: false,
       windowSize: '1200x900'
     },
@@ -18,8 +19,7 @@ exports.config = {
       require: './CustomHelper.ts'
     }
   },
-  bootstrap: require('./presettings.ts').bootstrap,
-  mocha: {},
+  bootstrap,
   include: {
     loginPage: './loginPage.ts',
     homePage: './homePage.ts'

@@ -8,7 +8,7 @@ class CustomHelper extends Helper {
     }
 
     printHelpers() {
-      console.log(this.helpers['Puppeteer'])
+      console.log('Helpers enabled', Object.keys(this.helpers))
     }
 }
 
