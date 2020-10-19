@@ -10,10 +10,11 @@ exports.config = {
   tests: './tests/**_test.ts',
   output: './output',
   helpers: {
-    Puppeteer: {
+    Playwright: {
       url: 'https://github.com',
       show: false,
-      windowSize: '1200x900'
+      windowSize: '1200x900',
+      browser: 'chromium'
     },
     CustomHelper: {
       require: './CustomHelper.ts'
