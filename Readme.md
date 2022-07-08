@@ -16,9 +16,11 @@ Install dependencies:
 npm i
 ```
 
+> This boilreplate installs Playwright for you. However, you can easily switch to WebDriver or other engine of choice by adding a corresponding helper and installing required dependencies
+
 ## Contents
 
-* `codecept.conf.js` - main configuration file
+* `codecept.conf.ts` - main configuration file
 * `tests/**_test.ts` - test files
 * `homePage.ts`, `loginPage.ts` - page objects
 * `CustomHelper` - a custom helper
